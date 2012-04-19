@@ -1,0 +1,56 @@
+
+#lcircle{
+	height: 10px;
+	width: 80px;
+	margin:auto;
+	
+/*	margin-top:40px;
+		float:left;
+		*/
+}
+.lcircle{
+	background-color:#CCC;
+	float:left;
+	height:15px;
+	margin-left:8px;
+	width:15px;
+	-webkit-animation-name: bounce_lcircle;
+	-webkit-border-radius:10px;
+ 	-webkit-animation-duration: 1.0s;
+ 	-webkit-animation-iteration-count: infinite;
+ 	-webkit-animation-direction: linear;
+
+	-moz-animation-name: bounce_lcircle;
+	-moz-border-radius:10px;
+ 	-moz-animation-duration: 1.0s;
+ 	-moz-animation-iteration-count: infinite;
+ 	-moz-animation-direction: linear;
+
+
+	opacity:0.3;
+}
+#lcircle_1{
+ 	-webkit-animation-delay: .2s;
+ 	-moz-animation-delay: .2s;
+ }
+#lcircle_2{
+ 	-webkit-animation-delay: .4s;
+ 	-moz-animation-delay: .4s;
+}
+#lcircle_3{
+ 	-webkit-animation-delay: .6s;
+ 	-moz-animation-delay: .6s;
+}
+@-webkit-keyframes bounce_lcircle{
+	0%{opacity:0.3;}
+	50%{opacity:0.6;background-color:#111}
+	100%{opacity:0.3;}
+}
+
+
+@-moz-keyframes bounce_lcircle{
+	0%{opacity:0.3;}
+	50%{opacity:0.6;background-color:#111}
+	100%{opacity:0.3;}
+}
+

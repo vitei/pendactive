@@ -1,5 +1,3 @@
-# Pendactive
-
 ## Description
 
 Pendactive is a recursive task management tool that allows individuals or teams organize and assign tasks hierarchicaly. A live demonstration can be seen at [pendactive.com](http://pendactive.com)

@@ -1,4 +1,4 @@
 pendactive
 ==========
 
-Recursive Task Management tool 
+A recursive task management tool 

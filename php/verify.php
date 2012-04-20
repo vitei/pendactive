@@ -1,63 +1,7 @@
 <?php
 	session_start();
 	
-?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="../css/main.css" />
-<link rel="stylesheet" type="text/css" href="../css/nav.css" />
-<link rel="stylesheet" href="../css/font-awesome.css">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-
-
-<style type="text/css">
-
-html,body{width:100%; height:100%;}
-
-.container{
-	text-align: center;
-	position: relative;
-	vertical-align: middle;
-	display: table-cell;
-	/*padding-top: 40px;*/
-}
-
-.inner{
-	margin-left: auto;
-	margin-right: auto;
-	
-	width: 100%;
-	
-}
-
-</style>
-
-
-<title>verify</title>
-</head>
-
-<body class="dark">
-<?php 
 	include "func.php";
-?>
-
-
-<div class="outer">
-	<div class="container">
-		<div class="inner">
-
-	<div class="intro single">
-
-<?php
-
-
-
-
-
-
-
 
 	if( $_POST['cancel'])
 	{
@@ -180,7 +124,52 @@ html,body{width:100%; height:100%;}
 	{
 		header("Location: /");			
 	}
+	else
+	{
 ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="../css/main.css" />
+<link rel="stylesheet" type="text/css" href="../css/nav.css" />
+<link rel="stylesheet" href="../css/font-awesome.css">
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+
+<style type="text/css">
+
+html,body{width:100%; height:100%;}
+
+.container{
+	text-align: center;
+	position: relative;
+	vertical-align: middle;
+	display: table-cell;
+	/*padding-top: 40px;*/
+}
+
+.inner{
+	margin-left: auto;
+	margin-right: auto;
+	
+	width: 100%;
+	
+}
+
+</style>
+
+
+<title>verify</title>
+</head>
+
+<body class="dark">
+
+<div class="outer">
+	<div class="container">
+		<div class="inner">
+
+	<div class="intro single">
 
 	<div id="title"><i class="icon-warning-sign icon-large" style="color:#d00"></i> Sorry, we had a problem!</div>
 
@@ -201,3 +190,7 @@ html,body{width:100%; height:100%;}
 </body>
 
 </html>
+
+<?php
+	}
+?>

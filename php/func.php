@@ -6,6 +6,7 @@ require "config.php";
 define(DEFAULT_ID,0);
 define(NOTICE_ID,1);
 define(ANYBODY_ID,2);
+define(ADMIN_ID,3);
 
 
 define(ACTION_NONE,0);
@@ -1146,7 +1147,7 @@ function writeTopMenu($user,$login=false,$tag=false,$search=false,$location=fals
 			
 			
 			
-			if ($user->id==1)
+			if ($user->id==ADMIN_ID)
 			{
 				$out .= '<hr>';
 				$out .= '<li><a href="/php/stats.php"><i class="icon-user icon-large"></i> Stats</a></li>';								

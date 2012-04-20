@@ -196,7 +196,7 @@ include "php/func.php";
 	
 	var uniqueID = Math.floor(Math.random()*1000000);
 	
-	var historyID=0;
+	var historyID=-1;
 
 	var checkTimeout;
 	
@@ -1683,8 +1683,6 @@ include "php/func.php";
 	
 	function checkHistory()
 	{
-	//	if (userid==1)
-	//		alert("in :"+historyID);
 	
 		if (historyTimeout)
 			clearTimeout(historyTimeout);
@@ -1698,16 +1696,7 @@ include "php/func.php";
 		var func = function() {checkHistory();}
 		historyTimeout = setTimeout(func,5*1000);
 
-/*
-		if (dragBusy)
-			return;
-
-		if (searchReq)
-			return;
-*/
-	
 		historyReq = getXMLHttpRequest(); 
-
 
 		historyReq.onreadystatechange = function()
 		{ 		
@@ -1715,11 +1704,10 @@ include "php/func.php";
 			{
 				if(historyReq.status == 200)
 				{
-					//if (userid==1)
-					//	alert(historyReq.responseText);
 										
 					if (historyReq.responseText)
 					{
+						//alert(historyReq.responseText);
 					
 						var values = historyReq.responseText.split(" ");
 						
@@ -1766,8 +1754,6 @@ include "php/func.php";
 									break;					
 							}
 						}
-						//else
-						//	alert(values[0]);	
 					}
 					
 				}

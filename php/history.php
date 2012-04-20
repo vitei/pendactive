@@ -16,7 +16,7 @@
 	
 	if ($user)
 	{	
-		if ($from)
+		if ($from>=0)
 		{
 			if ($parent)			
 				$last = sqlObject("SELECT * FROM history WHERE id>".sqlVar($from)." AND parent=".sqlVar($parent)." AND uid!=".sqlVar($uid)." ORDER BY id ASC LIMIT 1");
@@ -31,6 +31,8 @@
 			
 			if ($last)
 				echo "OK ".$last->id." ".ACTION_NONE;						
+			else
+				echo "OK 0 ".ACTION_NONE;						
 			
 		}
 				

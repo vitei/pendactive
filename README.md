@@ -11,13 +11,13 @@ seen at [pendactive.com](http://pendactive.com)
 
 ## Installation
 
-Copy the entire directory into your httpdocs folder and edit the following file:
+Copy the entire directory into your httpdocs folder and copy the config file:
 
 ```
-php/config.php
+$ mv php/config-default.php php/config.php
 ```
 
-You will need to define the following strings:
+You will need to define the following strings in php/config.php:
 
 ```
 define(CONFIG_DB_NAME,          '');    // database name

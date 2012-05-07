@@ -55,10 +55,9 @@ include "func.php";
 							
 				if ($into)
 				{	
-					$imsg = sqlObject("SELECT * FROM messages WHERE id=".sqlVar($into));
+					$imsg = getMessage($into,$user);				
 					
-					
-					if ($imsg->sender != $user->id && $imsg->assigned != $user->id)
+					if (!$imsg->memberid)
 						die("NG");
 					
 					$msg->gparent=$imsg->id;

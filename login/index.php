@@ -45,7 +45,7 @@ iframe {
 	clear: both;
 	margin-top: 0px;
 	font-size: 27px; 
-	text-align: center;
+	text-align: right;
 	width: 200px;
 	padding: 15px 0;
 
@@ -156,10 +156,11 @@ iframe {
 .sitetitle{
 	width:100%;
 	text-align: center;
-	font-size: 45px;
-	color: #888;
+	font-size: 50px;
+	color: #66a;
 	font-weight: bold;
 
+	text-shadow: rgba(0,0,0,0.3) 1px 1px 2px;
 }
 
 .sitetitle i{
@@ -171,8 +172,8 @@ iframe {
 .subtitle{
 	color:#888;
 	font-size: 20px;
-	margin-bottom: 30px;
 	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 
@@ -297,6 +298,10 @@ iframe {
 }
 
 
+input{
+	background-color: #ffe;
+}
+
 
 
 </style>
@@ -307,6 +312,19 @@ iframe {
 ?>
 
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30341747-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 
 
@@ -370,6 +388,65 @@ iframe {
 <body onLoad="checkPlaceholders();">
 
 
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+<a href="http://github.com/vitei/pendactive"><img style="position: absolute; top: 0; left: 0; border: 0; z-index:100;" src="https://a248.e.akamai.net/assets.github.com/img/5d21241b64dc708fcbb701f68f72f41e9f1fadd6/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub"></a>
+
+
+	<div class="share">
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a>
+
+	<span class="links">
+	
+	
+	<a href="mailto:feedback@pendactive.com"><i class="icon-envelope icon-large"></i></a>
+	<a href="https://github.com/vitei/pendactive"><i class="icon-github-sign icon-large"></i></a>
+	<a href="http://twitter.com/Pendactive"><i class="icon-twitter-sign icon-large"></i></a>
+	<a href="http://www.facebook.com/PendingActiveDone"><i class="icon-facebook-sign icon-large"></i></a>
+	
+	</span>
+	
+	<span class="sns">
+	<div class="fb-like" data-href="http://pendactive.com" data-send="false" data-layout="button_count" data-width="50" data-show-faces="true"></div>
+	</span>
+	
+	<span class="sns">
+	<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://pendactive.com" data-text="Try Pendactive">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</span>
+
+
+	<span class="sns">
+	<g:plusone size="medium"></g:plusone>
+	</span>
+
+	</div>
+	
+	
+
+
+
 <div class="outer">
 
 
@@ -381,30 +458,55 @@ iframe {
 
 		<div class="inner">
 		
-		    <div class="sitetitle">
-		    <?php echo CONFIG_SITE_TITLE; ?>
-		    </div>
-		    <div class="subtitle">
-		    recursive task management
-		    </div>
+		    <div class="sitetitle">pendactive</div>
+		    <div class="subtitle">recursive task management</div>
+		    
 		    
 		
-			<div class="login">								
-				<form id="login" name="login" method="post" action="/php/login.php" >
-				<input name="email" type="text" id="login-email" placeholder="email"/><br>
-				<input name="pwd" type="password" id="login-pwd" placeholder="password" /><br>
-				<button class="button medium blue" style="padding: 10px 8px"><i class="icon-user"></i> Log in</button>
-				<button class="button medium orange" name="signup" value="1" style="padding: 10px 8px; font-weight:bold"><i class="icon-ok"></i> Sign up</button>
-				</form>
+			<div class="logotitle">
+			
+			
+			<div class="action">
+			<a href="javascript:showVideo();"><div>Watch video <i class="icon-play-circle"></i></div></a>
+			<a href="/?p=1513"><div>Try it now <i class="icon-cog"></i></div></a>
+			<a href="/php/twitterredirect.php" ><img src="/images/sign-in-with-twitter-l.png" style="margin-top:10px;"></a>
 			</div>
+						
+				<div class="login">
+				
+				
+					<form id="login" name="login" method="post" action="/php/login.php" >
+					<input name="email" type="text" id="login-email" placeholder="email"/>
+					<input name="pwd" type="password" id="login-pwd" placeholder="password" />
+					<button class="button medium blue" style="padding: 10px 8px"><i class="icon-user"></i> Log in</button>
+					<button class="button medium orange" name="signup" value="1" style="padding: 10px 8px; font-weight:bold"><i class="icon-ok"></i> Sign up</button>
+					</form>
+					
+
+					
+				</div>
+			</div>
+
+		
+			<a href="javascript:showVideo();">
+			<div class="bbarc" style="cursor:pointer">
+				<div class="bar0" style="height:100px"></div>
+				<div class="bar1" style="height:200px"></div>
+				<div class="bar2" style="height:300px"></div>
+			</div>
+			</a>
+
+
 			
 		</div>
 		
 		
 	
 	<div class="footer">
-		<div>© 2012 Vitei Inc. Icons by <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></div>
+		<div>© Vitei Inc | <a href="/privacy">Privacy Policy</a> | Icons by <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></div>
 	</div>		
+	
+
 </div>
 </body>
 </html>

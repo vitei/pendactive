@@ -35,8 +35,7 @@ function showThumb($id)
 
 	$avatar = $_GET['avatar'];
 		
-	if (intval($avatar))
-		showAvatar($avatar);
+	showAvatar(intval($avatar));
 	
 
 	$thumb = $_GET['thumb'];
